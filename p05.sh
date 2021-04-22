@@ -21,10 +21,11 @@ apt install $PAQUET -y > /dev/null 2>&1
 if [[ $? -eq 0 ]]; then
     echo "El paquet $PAQUET s'ha instal·lat correctament"
 else
-    echo "Comprova la connectivitat i/o el nom del paquet."
+    echo "[ERROR] Comprova la connectivitat i/o el nom del paquet."
 fi
 
 echo -n "Vols continuar? Prem '1' per continuar: "
 read REPETEIX
 done
+
 exit 20
